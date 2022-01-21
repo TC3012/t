@@ -1,0 +1,62 @@
+Georgia Institute of Technology - CS1301
+HW01 - Functions & Expressions
+"""
+#########################################
+"""
+Function Name: dinnerTime()
+Parameters: N/A
+Returns: None
+"""
+def dinnerTime():
+    entree = int(input("how many entrees do you want"))
+    drinks = int(input("how many drinks do you want"))
+    Entree = entree * 12
+    Drinks = drinks * 4.50
+    rounde_E = round(Entree,2)
+    rounded_D = round(Drinks,2)
+    total_cost = rounde_E + rounded_D
+    print("The total cost of all the meals and drinks is" + str(total_cost))
+    
+    
+    pass
+#########################################
+"""
+Function Name: bottleBonanza()
+Parameters: N/A
+Returns: None
+"""
+def bottleBonanza():
+    import math
+    r = int(input("what is the radius of the water bottle "))
+    h = int(input("what is the heigh of the water bottle"))
+    radiu = r ** 2
+    v = radiu * h * math.pi
+    rounded_v = round(v,2)
+    print("the volume of the water bottle is" + str(rounded_v))
+
+    pass
+    
+#########################################
+"""
+Function Name: winterBreak()
+Parameters: N/A
+Returns: None
+"""
+def winterBreak():
+    pass
+#########################################
+"""
+Function Name: skateboardMoney()
+Parameters: N/A
+Returns: None
+"""
+def skateboardMoney():
+    a = int(input("How much is your monthly allowance "))
+    s = int(input("what percentage of your allowance do you want to save"))
+    SP = s / 100
+    S = a * SP
+    F = (5.99 + 4.40) * 30
+    L = a - S - F
+    rl = round(L,2)
+    print("you'll have $" + str(rl) + "left on your skateboard after savings and fees")
+    pass
